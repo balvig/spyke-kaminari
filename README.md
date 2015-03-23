@@ -1,6 +1,6 @@
 # Spyke::Kaminari
 
-Kaminari pagination for Spyke models. Inspired by [@DanielBlanco](https://github.com/DanielBlanco)'s [Her::Kaminari](https://github.com/DanielBlanco/her-kaminari).
+Makes [Spyke](https://github.com/balvig/spyke) models aware of APIs that return [pagination headers](https://github.com/generalassembly/spyke-kaminari/blob/3674c98990c2d23c7b1b7548ecfd2edae7090056/lib/spyke/kaminari.rb#L4-L12), like those from the [Grape::Kaminari](https://github.com/monterail/grape-kaminari) gem. Inspired by [@DanielBlanco](https://github.com/DanielBlanco)'s [Her::Kaminari](https://github.com/DanielBlanco/her-kaminari).
 
 [![Build Status](https://semaphoreci.com/api/v1/projects/0a78d63e-84b2-40cc-827d-01713bbb2d61/379901/badge.png)](https://semaphoreci.com/generalassembly/spyke-kaminari--2)
 
