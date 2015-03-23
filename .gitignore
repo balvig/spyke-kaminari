@@ -1,0 +1,6 @@
+# Bundler artifacts
+.bundle
+vendor/bundle
+
+# Gems built
+*.gem
