@@ -2,6 +2,8 @@
 
 Kaminari pagination for Spyke models. Inspired by [@DanielBlanco](https://github.com/DanielBlanco)'s [Her::Kaminari](https://github.com/DanielBlanco/her-kaminari).
 
+[![Build Status](https://semaphoreci.com/api/v1/projects/0a78d63e-84b2-40cc-827d-01713bbb2d61/379901/badge.png)](https://semaphoreci.com/generalassembly/spyke-kaminari--2)
+
 ## Installation
 
   1. Add to `Gemfile`:
