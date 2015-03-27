@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    spyke-kaminari (0.0.3)
+    spyke-kaminari (0.0.4)
       activesupport (~> 4)
       spyke (~> 3.1)
 

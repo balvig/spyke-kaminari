@@ -66,11 +66,11 @@ users.count
 ### Metadata
 
 ```ruby
-User.all.total_count  # => 68
-User.all.total_pages  # => 3
-User.all.limit_value  # => 25
-User.all.current_page # => 1
-User.all.next_page    # => 2
-User.all.prev_page    # => nil
-User.all.offset_value # => 0
+User.total_count  # => 68
+User.total_pages  # => 3
+User.limit_value  # => 25
+User.current_page # => 1
+User.next_page    # => 2
+User.prev_page    # => nil
+User.offset_value # => 0
 ```

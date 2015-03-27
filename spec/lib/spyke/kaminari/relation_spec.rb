@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Spyke::Kaminari::Relation do
+describe Spyke::Kaminari::Scopes do
   let(:model) { TestClient::Model }
   let(:names) { subject.map(&:name) }
 

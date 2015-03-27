@@ -9,10 +9,36 @@ module Spyke::Kaminari
     end
 
     module ClassMethods
-      # Overrides the method included by Spyke::Scoping to return paginated
-      # relations.
-      def all
-        current_scope || Spyke::Kaminari::Relation.new(self, uri: uri)
+      delegate :metadata, to: :all
+
+      Spyke::Kaminari::HEADERS.keys.each do |symbol|
+        define_method(symbol) do
+          metadata[Spyke::Kaminari::METADATA_KEY][symbol]
+        end
+      end
+
+      def first_page?
+        current_page == 1
+      end
+
+      def last_page?
+        current_page == total_pages
+      end
+
+      def out_of_range?
+        current_page > total_pages
+      end
+
+      def each_page
+        return to_enum(:each_page) unless block_given?
+
+        relation = all.clone
+        yield relation
+        return if relation.last_page? || relation.out_of_range?
+
+        (relation.next_page..relation.total_pages).each do |number|
+          yield clone.page(number)
+        end
       end
     end
   end

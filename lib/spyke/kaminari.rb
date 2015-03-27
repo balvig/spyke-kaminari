@@ -15,5 +15,4 @@ module Spyke::Kaminari
 end
 
 require 'spyke/kaminari/header_parser'
-require 'spyke/kaminari/relation'
 require 'spyke/kaminari/scopes'
